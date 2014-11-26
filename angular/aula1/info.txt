@@ -1,0 +1,5 @@
+First Step: Adding Angular to the HTML Page
+
+The first step to any AngularJS project, is actually adding AngularJS to the page. This lesson will show you adding the Angular script, initializing the app with ng-app, and simple two way binding with ng-model. This is a beginner level lesson.
+
+##################################################

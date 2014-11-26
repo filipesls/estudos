@@ -1,0 +1,36 @@
+The Basics
+Controllers
+
+Controllers are the 'glue' of an AngularJS application. They connect your markup with your data and act as a sort of switchboard. This video is going to take a look at Controllers and introduce the $scope, building on the Binding video.
+
+##################################################
+
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AngularJS Tutorials</title>
+  <link rel="stylesheet" href="vendor/foundation/foundation.min.css">
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+  <div ng-app="">
+    <div ng-controller="FirstCtrl">
+      <h1>{{data.message + " world"}}</h1>
+      <div class="{{data.message}}">
+        Wrap me in a foundation component
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+</body>
+</html>
+
+
+
+main.js
+function FirstCtrl($scope){
+  $scope.data = {message: "Hello"};
+}
